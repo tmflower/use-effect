@@ -5,7 +5,7 @@ import Card from "./Card";
 const DeckOfCards = () => {
 
     const [deck_id, setDeck_id] = useState(null);
-    // const [allCards, setAllCards] = useState(null);
+
     const [remaining, setRemaining] = useState(52);
     const [value, setValue] = useState(null);
     const [suit, setSuit] = useState(null);
@@ -34,10 +34,9 @@ const DeckOfCards = () => {
 
     return (
         <>
-            <h1>Deck of Cards</h1>
+            <h1>Deck of Cards: One Card Per Click</h1>
             <Card value={value} suit={suit} image={image} getCard={getCard}/>
-            <h3>Cards remaining in deck: {remaining}</h3>
-            
+            <h3>Cards remaining in deck: {remaining}</h3>            
         </>
     );
 };
